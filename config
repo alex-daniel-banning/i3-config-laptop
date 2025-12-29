@@ -196,5 +196,8 @@ for_window [class=".*"] border none
 bindsym $mod+p exec --no-startup-id rofi -show powermenu -modi powermenu:~/.local/bin/rofi-power-menu -theme ~/.config/rofi/config.rasi
 
 # Brightness controls
+# Setup steps:
+# sudo apt install brightnessctl
+# sudo usermod -aG video $USER
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s 10%+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
